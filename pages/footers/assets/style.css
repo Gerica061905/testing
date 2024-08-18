@@ -1,0 +1,224 @@
+.home {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db; /* Blue background */
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: translateY(-3px);
+}
+
+.home:active {
+    background-color: #2471a3; /* Even darker blue on click */
+    transform: translateY(0);
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    margin: 1.5rem auto;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Static Footers */
+.static-footer1, .static-footer2, .static-footer3, .static-footer4, .static-footer5 {
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 80%;
+}
+
+.static-footer1 {
+    background-color: #333;
+    color: #fff;
+}
+
+.static-footer2 {
+    background-color: #6441A5;
+    color: #fff;
+}
+
+.static-footer3 {
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+.static-footer4 {
+    background-color: #ff5722;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+}
+
+.static-footer5 {
+    background-color: #282828;
+    color: #fff;
+}
+
+/* Animated Footers */
+.animated-footer1, .animated-footer2, .animated-footer3, .animated-footer4, .animated-footer5 {
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 80%;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.animated-footer1 {
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.animated-footer1:hover {
+    background-color: #550707;
+    transform: translateY(-5px);
+}
+
+.animated-footer2 {
+    background-color: #6441A5;
+    color: #fff;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.animated-footer2:hover {
+    background-color: #7a54c8;
+    transform: rotate(3deg);
+}
+
+.animated-footer3 {
+    background-color: #f3f3f3;
+    color: #333;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.animated-footer3:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.animated-footer4 {
+    background-color: #ff5722;
+    color: #fff;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.animated-footer4:hover {
+    background-color: #ff7043;
+    transform: scale(1.05);
+}
+
+.animated-footer5 {
+    background-color: #282828;
+    color: #fff;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.animated-footer5:hover {
+    background-color: #333;
+    transform: translateY(-10px) scale(1.05);
+}
+
+/* Footer Specific Styling */
+footer img {
+    max-width: 8rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+footer p {
+    flex-grow: 1;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1rem;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-icons i {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons i:hover {
+    color: #ddd;
+}
+
+footer .newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+footer .newsletter input[type="email"] {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    max-width: 300px;
+    background-color: #444;
+    color: #fff;
+    outline: none;
+}
+
+/* Animated Button Styling for Footers */
+
+/* Footer 1 - Slide Up Effect */
+.animated-footer1 .newsletter button {
+    transition: transform 0.3s ease-in-out;
+}
+
+.animated-footer1 .newsletter button:hover {
+    transform: translateY(-5px);
+}
+.animated-footer2 .newsletter button {
+    transition: transform 0.3s ease-in-out;
+}
+.animated-footer2 .newsletter button:hover {
+    transform: rotate(10deg);
+}
+.animated-footer3 .newsletter button {
+    transition: transform 0.3s ease-in-out;
+}
+.animated-footer3 .newsletter button:hover {
+    transform: scale(1.1);
+}
+
+.animated-footer4 .newsletter button {
+    transition: transform 0.3s ease-in-out;
+}
+.animated-footer4 .newsletter button:hover {
+    transform: skewX(-10deg);
+}
+.animated-footer5 .newsletter button {
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.animated-footer5 .newsletter button:hover {
+    background-color: #555;
+    border: 2px solid #00aaff;
+}
+footer, .static-footer4, .animated-footer1, .animated-footer2, .animated-footer3, .animated-footer4, .animated-footer5 {
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 80%;
+}
